@@ -1,6 +1,6 @@
-import { Authors, declareModule, FrameArt } from '@collboard/modules-sdk';
+import { declareModule, FrameArt } from '@collboard/modules-sdk';
 import { Vector } from 'xyzt';
-import { name as packageName, version } from '../package.json';
+import { author, name as packageName, version } from '../package.json';
 import { FRAMES } from './config';
 
 for (const { name: paperName, title, description, icon, size } of FRAMES) {
@@ -14,7 +14,7 @@ for (const { name: paperName, title, description, icon, size } of FRAMES) {
             description,
             categories: ['Template', 'Art', 'Productivity'],
             icon,
-            author: Authors.hejny,
+            author,
         },
         /* eslint-disable no-loop-func */
         async setup(systems) {
