@@ -1,11 +1,13 @@
+import { SCALE_PIXELS } from '@collboard/modules-sdk';
 import { Vector } from 'xyzt';
-import { SCALE_PIXELS } from '../../../config';
-import { IPaperConfig } from './interfaces/IPaperConfig';
+import { IFrameConfig } from './interfaces/IFrameConfig';
 
-// Note: I am not scaling one paper size, because papers are rounded exactly
-// @see https://cs.wikipedia.org/wiki/Form%C3%A1t_pap%C3%ADru
-// TODO: Generate automatically all from the table
-export const PAPERS: Array<IPaperConfig> = [
+/**
+ * Configuration of all frames - paper sizes, screen sizes,...
+ *
+ * Note: Not scaling one paper size, because papers are not rounded exactly
+ */
+export const FRAMES: Array<IFrameConfig> = [
     {
         icon: '📄',
         name: 'paper-a2',
@@ -34,9 +36,6 @@ export const PAPERS: Array<IPaperConfig> = [
         description: { en: 'Paper A5', cs: 'Papír A5' },
         size: new Vector(14.8, 21.0).scale(SCALE_PIXELS.centimeter),
     },
-
-    // American paper sizes
-
     {
         icon: '🖥️',
         name: 'screen-fullhd',
@@ -47,3 +46,11 @@ export const PAPERS: Array<IPaperConfig> = [
 
     // TODO: Add screen sizes + american papers
 ];
+
+/**
+ * TODO: American paper sizes
+ * TODO: Presentation slides
+ * TODO: Maybe include (sub)cathegories like papers(/a)(/b)(/eu)(/american), screens,...
+ * TODO: Generate automatically all from the table:
+ *       @see https://cs.wikipedia.org/wiki/Form%C3%A1t_pap%C3%ADru
+ */

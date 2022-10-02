@@ -1,14 +1,14 @@
+import { Authors, declareModule, FrameArt } from '@collboard/modules-sdk';
 import { Vector } from 'xyzt';
-import { Authors } from '../../../50-systems/ModuleStore/Authors';
-import { internalModules } from '../../../50-systems/ModuleStore/internalModules';
-import { FrameArt } from '../../../71-arts/50-FrameArt';
-import { PAPERS } from './frame-config';
+import { name as packageName } from '../package.json';
+import { FRAMES } from './config';
 
-for (const { name, title, description, icon, size } of PAPERS) {
-    internalModules.declareModule({
+for (const { name: paperName, title, description, icon, size } of FRAMES) {
+    declareModule({
         manifest: {
-            name: `@collboard/frame-${name}`,
-            deprecatedNames: `Paper${name}Module`,
+            // collboard/background-frames
+            name: `${packageName}/${paperName}`,
+            deprecatedNames: [`Paper${name}Module`, `@collboard/frame-${name}`],
             title,
             description,
             categories: ['Template', 'Art', 'Productivity'],
@@ -35,5 +35,6 @@ for (const { name, title, description, icon, size } of PAPERS) {
 }
 
 /**
- * TODO: !! Move to external repo https://github.com/collboard/frames
+ * TODO: Also make movable frames (not as a virtualArt module BUT as a tool module which creates materialArts) this should working together with current virtual one made from same FRAMES configuration
+ * TODO: Maybe a maker for this - makeFrameModule (same in all @collboard/background-* repositories)
  */

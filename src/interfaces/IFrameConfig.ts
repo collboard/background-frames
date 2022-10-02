@@ -1,9 +1,7 @@
+import { IStringMessage, string_char_emoji, string_url_image } from '@collboard/modules-sdk';
 import { IVectorData } from 'xyzt';
-import { string_char_emoji } from '../../../../40-utils/typeAliasEmoji';
-import { string_url_image } from '../../../../40-utils/typeAliases';
-import { IStringMessage } from '../../../../50-systems/TranslationsSystem/interfaces/IMessage';
 
-export interface IPaperConfig {
+export interface IFrameConfig {
     /**
      * Unique name of the paper used in a module name
      */
