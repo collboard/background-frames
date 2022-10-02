@@ -7,7 +7,7 @@ import { IFrameConfig } from './interfaces/IFrameConfig';
  *
  * Note: Not scaling one paper size, because papers are not rounded exactly
  */
-export const FRAMES: Array<IFrameConfig> = [
+export const FRAMES: IFrameConfig[] = [
     {
         icon: '📄',
         name: 'paper-a2',
