@@ -6,9 +6,9 @@
 
 [![License of 🎞️ Background frames](https://img.shields.io/github/license/collboard/background-frames.svg?style=flat)](https://github.com/collboard/background-frames/blob/main/LICENSE)
 [![lint](https://github.com/collboard/background-frames/actions/workflows/lint.yml/badge.svg)](https://github.com/collboard/background-frames/actions/workflows/lint.yml)
+[![test](https://github.com/collboard/background-frames/actions/workflows/test.yml/badge.svg)](https://github.com/collboard/background-frames/actions/workflows/test.yml)
 [![Known Vulnerabilities](https://snyk.io/test/github/collboard/background-frames/badge.svg)](https://snyk.io/test/github/collboard/background-frames)
 [![Issues](https://img.shields.io/github/issues/collboard/background-frames.svg?style=flat)](https://github.com/collboard/background-frames/issues)
-<!--[![test](https://github.com/collboard/background-frames/actions/workflows/test.yml/badge.svg)](https://github.com/collboard/background-frames/actions/workflows/test.yml)-->
 
 <!--/Badges-->
 
