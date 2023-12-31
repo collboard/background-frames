@@ -1,6 +1,6 @@
 {
     "name": "@collboard/background-frames",
-    "version": "0.1.93",
+    "version": "0.1.94",
     "description": "Background frames like papers (A4, A3,...), screens, etc. for Collboard.com",
     "license": "SEE LICENSE IN LICENSE",
     "author": {
